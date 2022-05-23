@@ -1,0 +1,126 @@
+<html>
+<head> 
+	<style>
+
+*{
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+	background: #e87058;
+}
+.nav ul{ 
+	list-style-type: none;
+}	
+.nav ul li{
+float:left;
+width:100px; 
+text-align:center; 
+margin-left:2px;
+}
+.nav ul li ul li{
+ margin-left: 0px;
+}
+.nav ul ul{ 
+display:none;
+}
+.nav ul li:hover > ul{
+display:block;
+}
+.nav ul li:hover{
+ background: #e87058;
+ color: #e87058; 
+ font-weight:bold;
+}
+.nav ul li ul li:hover{
+ background: #e87058; 
+ color: #e87058;
+}
+.container {
+  display: grid;
+  height: 700px;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.4fr 1fr 0.4fr;
+  grid-template-areas:  
+  "Header Header Header"
+  "S1 Main S2"
+  "Footer Footer Footer"
+
+}
+
+.header {
+    Background-color: #e87058;
+    grid-area: Header;
+	align: center;
+}
+
+.content-1 {
+    Background-color: #e87058;
+    grid-area: S1;
+}
+
+.content-2 {
+    background-color: #e87058;
+    grid-area: Main;
+}
+
+.content-3 {
+    background-color: #e87058;
+    grid-area: S2;
+}
+
+.footer {
+    background-color: #e87058;
+    grid-area: Footer;
+}
+
+@media screen and (max-width: 600px) {
+
+.container {
+  display: grid; 
+  grid-template-columns: 2.2fr; 
+  grid-template-rows: 0.4fr 0.7fr 1fr 0.7fr 0.4fr; 
+  grid-template-areas: 
+    "Header"
+    "S1"
+    "Main"
+    "S2"
+    "Footer"; 
+}
+
+
+</style>
+
+<title>PT4-1_ABAO</title>
+  </head>
+   <body> 
+<font color=white face="Open Sans">
+   <div class="container">
+<div align="center" class="header">
+  <div class=nav>
+<ul>
+         <li align=center><a style="font-weight:bold" href=index.html>Me</a></li>
+           <li align=center><a style="font-weight:bold" href=Link1.html>Favorite Philosophers</a></li> 
+           <li align=center><a style="font-weight:bold" href=Link2.html>Favorite Book Authors</a></li>
+           <li align=center><a style="font-weight:bold" href=Link3.html>Favorite Movies</a></li> 
+           <li align=center><a style="font-weight:bold" href=Link4.html>Favorite Musicians</a></li>  	
+		   <li align=center><a style="font-weight:bold" href=Link5.html>Favorite Actors</a></li>  		   
+       </ul> 
+   </div> 
+</div> 
+<div align="center" class="content-1">
+<h2> Freddie Mercury</h2>
+<img src=mercury.jpg height= 160px>
+<h1> EEE-YOOOOOOOOOOOOOO</h1>
+</div>
+<div align="center" class="content-2">
+<h2> Mick Jagger</h2>
+<img src=download.jpg height= 160px>
+<h1> I once hated Rolling Stones, but as I got older my musical tastes changed, and I've gained appreciation for musicians who have flamboyancy than class.</h1>
+</div>
+<div align="center" class="content-3">
+<h2> George Harrison</h2>
+<img src=George.jpg height= 160px>
+<h1> The Coolest Beatle Ever. Period. With the exception of Ringo Starr.</h1>
+</div>
+</body> 
+</html>

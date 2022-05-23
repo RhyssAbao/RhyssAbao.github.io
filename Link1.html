@@ -1,0 +1,128 @@
+<html>
+<head> 
+	<style>
+
+*{
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+	background: #e87058;
+}
+.nav ul{ 
+	list-style-type: none;
+}	
+.nav ul li{
+float:left;
+width:100px; 
+text-align:center; 
+margin-left:2px;
+}
+.nav ul li ul li{
+ margin-left: 0px;
+}
+.nav ul ul{ 
+display:none;
+}
+.nav ul li:hover > ul{
+display:block;
+}
+.nav ul li:hover{
+ background: #e87058;
+ color: #e87058; 
+ font-weight:bold;
+}
+.nav ul li ul li:hover{
+ background: #e87058; 
+ color: #e87058;
+}
+.container {
+  display: grid;
+  height: 700px;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.4fr 1fr 0.4fr;
+  grid-template-areas:  
+  "Header Header Header"
+  "S1 Main S2"
+  "Footer Footer Footer"
+
+}
+
+.header {
+    Background-color: #e87058;
+    grid-area: Header;
+	align: center;
+}
+
+.content-1 {
+    Background-color: #e87058;
+    grid-area: S1;
+}
+
+.content-2 {
+    background-color: #e87058;
+    grid-area: Main;
+}
+
+.content-3 {
+    background-color: #e87058;
+    grid-area: S2;
+}
+
+.footer {
+    background-color: #e87058;
+    grid-area: Footer;
+}
+
+@media screen and (max-width: 600px) {
+
+.container {
+  display: grid; 
+  grid-template-columns: 2.2fr; 
+  grid-template-rows: 0.4fr 0.7fr 1fr 0.7fr 0.4fr; 
+  grid-template-areas: 
+    "Header"
+    "S1"
+    "Main"
+    "S2"
+    "Footer"; 
+}
+
+
+</style>
+
+<title>PT4-1_Abao</title>
+  </head>
+   <body> 
+<font color=white face="Open Sans">
+   <div class="container">
+<div align="center" class="header">
+  <div class=nav>
+<ul>
+         <li align=center><a style="font-weight:bold" href=index.html>Me</a></li>
+           <li align=center><a style="font-weight:bold" href=Link1.html>Favorite Philosophers</a></li> 
+           <li align=center><a style="font-weight:bold" href=Link2.html>Favorite Book Authors</a></li>
+           <li align=center><a style="font-weight:bold" href=Link3.html>Favorite Movies</a></li> 
+           <li align=center><a style="font-weight:bold" href=Link4.html>Favorite Musicians</a></li>  	
+		   <li align=center><a style="font-weight:bold" href=Link5.html>Favorite Actors</a></li>  		   
+       </ul> 
+   </div> 
+</div> 
+<div align="center" class="content-1">
+<h2> Søren Kierkegaard</h2>
+<img src=KIERK.jpg height= 160px>
+<h1> Regarded as "The Father of Existentialism", his philosophical view have helped strengthen my inner outlook on being a human being.</h1>
+</div>
+<div align="center" class="content-2">
+<h2> René Descartes</h2>
+<img src=DESC.jpg height= 160px>
+<h1>He is most famous for his statement; "I think, therefore I am", and to tell you the truth, when i first read that statement, somehow it assured me that life has a purpose.</h1>
+</div>
+<div align="center" class="content-3">
+<h2>Friedrich Nietzsche</h2>
+<img src=663.jpg height= 160px>
+<h1>"To live is to suffer, to survive is to find some meaning in the suffering", accept the suffering live on as though it is infinite.</h1>
+</div>
+</div>
+</div>
+</body> 
+</html>

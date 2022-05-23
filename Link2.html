@@ -1,0 +1,128 @@
+<html>
+<head> 
+	<style>
+
+*{
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+	background: #e87058;
+}
+.nav ul{ 
+	list-style-type: none;
+}	
+.nav ul li{
+float:left;
+width:100px; 
+text-align:center; 
+margin-left:2px;
+}
+.nav ul li ul li{
+ margin-left: 0px;
+}
+.nav ul ul{ 
+display:none;
+}
+.nav ul li:hover > ul{
+display:block;
+}
+.nav ul li:hover{
+ background: #e87058;
+ color: #e87058; 
+ font-weight:bold;
+}
+.nav ul li ul li:hover{
+ background: #e87058; 
+ color: #e87058;
+}
+.container {
+  display: grid;
+  height: 700px;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.4fr 1fr 0.4fr;
+  grid-template-areas:  
+  "Header Header Header"
+  "S1 Main S2"
+  "Footer Footer Footer"
+
+}
+
+.header {
+    Background-color: #e87058;
+    grid-area: Header;
+	align: center;
+}
+
+.content-1 {
+    Background-color: #e87058;
+    grid-area: S1;
+}
+
+.content-2 {
+    background-color: #e87058;
+    grid-area: Main;
+}
+
+.content-3 {
+    background-color: #e87058;
+    grid-area: S2;
+}
+
+.footer {
+    background-color: #e87058;
+    grid-area: Footer;
+}
+
+@media screen and (max-width: 600px) {
+
+.container {
+  display: grid; 
+  grid-template-columns: 2.2fr; 
+  grid-template-rows: 0.4fr 0.7fr 1fr 0.7fr 0.4fr; 
+  grid-template-areas: 
+    "Header"
+    "S1"
+    "Main"
+    "S2"
+    "Footer"; 
+}
+
+
+</style>
+
+<title>PT4-1_Abao</title>
+  </head>
+   <body> 
+<font color=white face="Open Sans">
+   <div class="container">
+<div align="center" class="header">
+  <div class=nav>
+<ul>
+         <li align=center><a style="font-weight:bold" href=index.html>Me</a></li>
+           <li align=center><a style="font-weight:bold" href=Link1.html>Favorite Philosophers</a></li> 
+           <li align=center><a style="font-weight:bold" href=Link2.html>Favorite Book Authors</a></li>
+           <li align=center><a style="font-weight:bold" href=Link3.html>Favorite Movies</a></li> 
+           <li align=center><a style="font-weight:bold" href=Link4.html>Favorite Musicians</a></li>  	
+		   <li align=center><a style="font-weight:bold" href=Link5.html>Favorite Actors</a></li>  		   
+       </ul> 
+   </div> 
+</div> 
+<div align="center" class="content-1">
+<h2> Ernest Hemingway</h2>
+<img src=ernie.jpg height= 160px>
+<h1> One of the most beautiful artist who ever lived, It is as if his words seem to touch your soul with ease. Favourite book of his: A Farewell To Arms</h1>
+</div>
+<div align="center" class="content-2">
+<h2> Albert Camus</h2>
+<img src=camus.jpg height= 160px>
+<h1> A poetic genius, one who lived for his art and bared his legacy from it. His work are most vocal about the condition of humanity. The coolest philosopher who ever lived. Favourite novel of his: The Stranger</h1>
+</div>
+<div align="center" class="content-3">
+<h2> Haruki Murakami</h2>
+<img src=haruki.jpg height= 160px>
+<h1> His books are more than magical, they are transcendatl figures of imagination. Beautiful, sincere and poetic. Favourite book of his: Kafka on the shore</h1>
+</div>
+</div>
+</div>
+</body> 
+</html>

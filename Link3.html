@@ -1,0 +1,125 @@
+<html>
+<head> 
+	<style>
+
+*{
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+	background: #e87058;
+}
+.nav ul{ 
+	list-style-type: none;
+}	
+.nav ul li{
+float:left;
+width:100px; 
+text-align:center; 
+margin-left:2px;
+}
+.nav ul li ul li{
+ margin-left: 0px;
+}
+.nav ul ul{ 
+display:none;
+}
+.nav ul li:hover > ul{
+display:block;
+}
+.nav ul li:hover{
+ background: #e87058;
+ color: #e87058; 
+ font-weight:bold;
+}
+.nav ul li ul li:hover{
+ background: #e87058; 
+ color: #e87058;
+}
+.container {
+  display: grid;
+  height: 700px;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.4fr 1fr 0.4fr;
+  grid-template-areas:  
+  "Header Header Header"
+  "S1 Main S2"
+  "Footer Footer Footer"
+
+}
+
+.header {
+    Background-color: #e87058;
+    grid-area: Header;
+	align: center;
+}
+
+.content-1 {
+    Background-color: #e87058;
+    grid-area: S1;
+}
+
+.content-2 {
+    background-color: #e87058;
+    grid-area: Main;
+}
+
+.content-3 {
+    background-color: #e87058;
+    grid-area: S2;
+}
+
+.footer {
+    background-color: #e87058;
+    grid-area: Footer;
+}
+
+@media screen and (max-width: 600px) {
+
+.container {
+  display: grid; 
+  grid-template-columns: 2.2fr; 
+  grid-template-rows: 0.4fr 0.7fr 1fr 0.7fr 0.4fr; 
+  grid-template-areas: 
+    "Header"
+    "S1"
+    "Main"
+    "S2"
+    "Footer"; 
+}
+
+</style>
+
+<title>PT4-1_A</title>
+  </head>
+   <body> 
+<font color=white face="Open Sans">
+   <div class="container">
+<div align="center" class="header">
+  <div class=nav>
+<ul>
+         <li align=center><a style="font-weight:bold" href=index.html>Me</a></li>
+           <li align=center><a style="font-weight:bold" href=Link1.html>Favorite Philosophers</a></li> 
+           <li align=center><a style="font-weight:bold" href=Link2.html>Favorite Book Authors</a></li>
+           <li align=center><a style="font-weight:bold" href=Link3.html>Favorite Movies</a></li> 
+           <li align=center><a style="font-weight:bold" href=Link4.html>Favorite Musicians</a></li>  	
+		   <li align=center><a style="font-weight:bold" href=Link5.html>Favorite Actors</a></li>  		   
+       </ul> 
+   </div> 
+</div> 
+<div align="center" class="content-1">
+<h2> Goodfellas</h2>
+<img src=goodfellas.jpg height= 160px>
+<h1> The greatest gangster picture portrayed in the history of cinema. From the acting to music to cinematography, this film is an overall perfect classic piece of great cinema. Scorsese at the top of his mastery in filmmaking.</h1>
+</div>
+<div align="center" class="content-2">
+<h2> The Seventh Seal</h2>
+<img src=bergman.jpg height= 160px>
+<h1> A profoundly moving tale of doubt, faith and humanity. It is richly complex and indluges us to confront the nature of humanity. Poignant, lyrical and moving. This is what I appraise as the best film Ingmar Bergman has ever made.</h1>
+</div>
+<div align="center" class="content-3">
+<h2> The 400 Blows</h2>
+<img src=blows.jpg height= 160px>
+<h1> Poetically sincere and moving, one of those films that capture the essence of childhood. Truffaut is a raw voice of filmic talent.</h1>
+</div>
+</body> 
+</html>
